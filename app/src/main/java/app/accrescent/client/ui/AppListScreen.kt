@@ -35,6 +35,7 @@ fun AppListScreen(
 ) {
     val apps by viewModel.apps.collectAsState(emptyList())
     val installStatuses = viewModel.installStatuses
+    val requireUserAction by viewModel.preferencesManager.requireUserAction.collectAsState(true)
 
     SwipeRefresh(
         modifier = Modifier.padding(padding),
@@ -64,6 +65,7 @@ fun AppListScreen(
                         onInstallClicked = viewModel::installApp,
                         onUninstallClicked = viewModel::uninstallApp,
                         onOpenClicked = viewModel::openApp,
+                        requireUserAction = requireUserAction,
                     )
                 }
             }

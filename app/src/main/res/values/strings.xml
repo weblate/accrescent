@@ -14,6 +14,8 @@
     <string name="unknown">\???</string>
     <string name="dynamic_color">Dynamic color / Material You</string>
     <string name="dynamic_color_desc">Theme the app based on the system color palette</string>
+    <string name="require_user_action">Prompt for confirmation when installing apps</string>
+    <string name="require_user_action_desc">Prompt for confirmation every time an app is installed. Only applicable when Accrescent is part of the OS.</string>
     <string name="swipe_refresh">Swipe down to refresh</string>
     <string name="no_apps_installed">No apps installed</string>
     <string name="up_to_date">All apps are up-to-date</string>
